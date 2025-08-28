@@ -1,0 +1,156 @@
+{
+  "daily": {
+    "education": {
+      "name": "Education",
+      "tasks": {
+        "study": {
+          "name": "Study",
+          "description": "[Name] will study academic subjects to improve knowledge."
+        },
+        "research": {
+          "name": "Research",
+          "description": "[Name] will conduct research activities in the library."
+        },
+        "practice": {
+          "name": "Practice Skills",
+          "description": "[Name] will practice various skills to improve abilities."
+        },
+        "exercise": {
+          "name": "Exercise",
+          "description": "[Name] will exercise to improve physical fitness."
+        },
+        "dance": {
+          "name": "Dance",
+          "description": "[Name] will improve dance and movement skills."
+        },
+        "etiquette": {
+          "name": "Etiquette",
+          "description": "This lesson will teach [Name] proper social behavior and manners."
+        }
+      }
+    },
+    "work": {
+      "name": "Work & Career",
+      "tasks": {
+        "apprentice": {
+          "name": "Apprentice",
+          "description": "[Name] will work as an apprentice to learn a trade."
+        },
+        "volunteer": {
+          "name": "Volunteer",
+          "description": "[Name] will volunteer in the community to help others."
+        },
+        "acolyte": {
+          "name": "Acolyte",
+          "description": "[Name] will assist at the temple with community service."
+        }
+      }
+    }
+  },
+  "break": {
+    "rest": {
+      "name": "Rest & Relaxation",
+      "tasks": {
+        "lunch": {
+          "name": "Lunch",
+          "description": "[Name] will share a pleasant meal and conversation."
+        },
+        "meditation": {
+          "name": "Meditation",
+          "description": "[Name] will practice meditation to improve focus and patience."
+        },
+        "reading": {
+          "name": "Reading",
+          "description": "[Name] will enjoy reading books for knowledge and entertainment."
+        }
+      }
+    },
+    "shop": { 
+      "name": "Shopping",
+      "tasks": {
+        "tailor": {
+          "name": "Clothing Shop",
+          "description": "You will go shopping with [Name] to buy appropriate clothing."
+        },
+        "books": {
+          "name": "Bookstore",
+          "description": "Visit the bookstore with [Name] to find interesting books and materials."
+        }
+      }
+    }
+  },
+  "social": {
+    "friendship": {
+      "name": "Friendship Building",
+      "tasks": {
+        "conversation": {
+          "name": "Deep Conversation",
+          "description": "[Name] will engage in meaningful conversations to build understanding.",
+          "difficulty": 1
+        },
+        "teamwork": {
+          "name": "Teamwork",
+          "description": "[Name] will work with others on collaborative projects.",
+          "difficulty": 2
+        },
+        "presentation": {
+          "name": "Presentation",
+          "description": "[Name] will give a presentation to improve communication skills.",
+          "difficulty": 3
+        }
+      }
+    },
+    "community": {
+      "name": "Community Engagement",
+      "tasks": {
+        "organize": {
+          "name": "Organize Event",
+          "description": "[Name] will help organize community events and gatherings.",
+          "difficulty": 2
+        },
+        "mentor": {
+          "name": "Mentor Others",
+          "description": "[Name] will mentor and teach skills to others in the community.",
+          "difficulty": 3
+        }
+      }
+    }
+  },
+  "adventure": {
+    "exploration": {
+      "name": "Exploration",
+      "tasks": {
+        "travel": {
+          "name": "Travel",
+          "description": "[Name] will explore new locations and discover interesting places.",
+          "difficulty": 2
+        },
+        "discovery": {
+          "name": "Investigation",
+          "description": "[Name] will investigate mysteries and solve puzzles.",
+          "difficulty": 3
+        },
+        "quest": {
+          "name": "Quest",
+          "description": "[Name] will embark on a quest to help others and gain experience.",
+          "difficulty": 4
+        }
+      }
+    },
+    "challenges": {
+      "name": "Challenges",
+      "tasks": {
+        "obstacle": {
+          "name": "Overcome Obstacle",
+          "description": "[Name] will face and overcome various challenges.",
+          "difficulty": 2
+        },
+        "competition": {
+          "name": "Competition",
+          "description": "[Name] will participate in friendly competitions to test skills.",
+          "difficulty": 3
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "intelligence": {
+    "name": "Intelligence",
+    "description": "[HisHer] problem-solving and learning ability.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "struggles with complex concepts"
+    }, {
+      "upperBound": 50,
+      "description": "average understanding"
+    }, {
+      "upperBound": 75,
+      "description": "quick learner"
+    }, {
+      "description": "brilliant mind"
+    }]
+  },
+  "creativity": {
+    "name": "Creativity",
+    "description": "[HisHer] artistic and innovative thinking ability.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "conventional thinker"
+    }, {
+      "upperBound": 50,
+      "description": "occasionally creative"
+    }, {
+      "upperBound": 75,
+      "description": "imaginative"
+    }, {
+      "description": "visionary artist"
+    }]
+  },
+  "charisma": {
+    "name": "Charisma",
+    "description": "[HisHer] social influence and leadership ability.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "awkward and shy"
+    }, {
+      "upperBound": 50,
+      "description": "friendly"
+    }, {
+      "upperBound": 75,
+      "description": "captivating"
+    }, {
+      "description": "natural leader"
+    }]
+  },
+  "empathy": {
+    "name": "Empathy",
+    "description": "[HisHer] ability to understand and relate to others.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "struggles to read emotions"
+    }, {
+      "upperBound": 50,
+      "description": "understanding"
+    }, {
+      "upperBound": 75,
+      "description": "deeply compassionate"
+    }, {
+      "description": "emotionally intuitive"
+    }]
+  },
+  "courage": {
+    "name": "Courage",
+    "description": "[HisHer] ability to face challenges and take risks.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "cautious and hesitant"
+    }, {
+      "upperBound": 50,
+      "description": "reasonably brave"
+    }, {
+      "upperBound": 75,
+      "description": "bold"
+    }, {
+      "description": "fearless"
+    }]
+  },
+  "patience": {
+    "name": "Patience",
+    "description": "[HisHer] ability to handle difficult situations calmly.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "easily frustrated"
+    }, {
+      "upperBound": 50,
+      "description": "generally calm"
+    }, {
+      "upperBound": 75,
+      "description": "very patient"
+    }, {
+      "description": "zen-like composure"
+    }]
+  },
+  "focus": {
+    "name": "Focus",
+    "description": "[HisHer] concentration and attention to detail.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "easily distracted"
+    }, {
+      "upperBound": 50,
+      "description": "decent concentration"
+    }, {
+      "upperBound": 75,
+      "description": "highly focused"
+    }, {
+      "description": "laser-sharp attention"
+    }]
+  },
+  "energy": {
+    "name": "Energy",
+    "description": "[HisHer] physical and mental stamina.",
+    "hints": [{
+      "upperBound": 25,
+      "description": "weak and tires quickly"
+    }, {
+      "upperBound": 50,
+      "description": "healthy energy levels"
+    }, {
+      "upperBound": 75,
+      "description": "highly energetic"
+    }, {
+      "description": "boundless vitality"
+    }]
+  }
+}

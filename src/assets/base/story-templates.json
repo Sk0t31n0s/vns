@@ -1,0 +1,254 @@
+{
+  "templates": [
+    {
+      "id": "academic-mentor",
+      "name": "Academic Mentorship",
+      "genre": "Educational",
+      "description": "Guide a student character through their academic journey, helping them develop skills and overcome learning challenges.",
+      "targetAudience": ["educators", "students", "parents"],
+      "estimatedDuration": "medium",
+      "themes": ["learning", "personal growth", "mentorship", "academic achievement"],
+      "milestones": [
+        {
+          "id": "first-success",
+          "name": "First Academic Success",
+          "description": "Character achieves their first major academic milestone",
+          "requiredStats": { "intelligence": 25, "focus": 20 },
+          "requiredRelationshipLevel": 15,
+          "rewards": {
+            "relationshipBonus": 5,
+            "statBonuses": { "intelligence": 3, "confidence": 2 }
+          }
+        },
+        {
+          "id": "study-group-leader",
+          "name": "Study Group Leadership",
+          "description": "Character becomes a leader in their study group",
+          "requiredStats": { "charisma": 30, "empathy": 25 },
+          "requiredRelationshipLevel": 25,
+          "rewards": {
+            "relationshipBonus": 10,
+            "statBonuses": { "charisma": 5, "empathy": 3 },
+            "unlockedActivities": ["mentor-others", "organize-study-sessions"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "creative-journey",
+      "name": "Creative Artist's Journey",
+      "genre": "Artistic",
+      "description": "Support a character as they develop their artistic talents and find their creative voice.",
+      "targetAudience": ["artists", "writers", "creative professionals"],
+      "estimatedDuration": "long",
+      "themes": ["creativity", "self-expression", "artistic growth", "inspiration"],
+      "milestones": [
+        {
+          "id": "first-artwork",
+          "name": "First Completed Artwork",
+          "description": "Character completes their first significant artistic piece",
+          "requiredStats": { "creativity": 20, "patience": 15 },
+          "requiredRelationshipLevel": 10,
+          "rewards": {
+            "relationshipBonus": 5,
+            "statBonuses": { "creativity": 4, "confidence": 2 }
+          }
+        },
+        {
+          "id": "public-exhibition",
+          "name": "First Public Exhibition",
+          "description": "Character displays their work publicly for the first time",
+          "requiredStats": { "creativity": 40, "courage": 30 },
+          "requiredRelationshipLevel": 30,
+          "rewards": {
+            "relationshipBonus": 15,
+            "statBonuses": { "charisma": 5, "courage": 5 },
+            "unlockedActivities": ["teach-art-classes", "commission-work"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "adventure-explorer",
+      "name": "Explorer's Adventure",
+      "genre": "Adventure",
+      "description": "Join a character on thrilling adventures as they explore new places and solve mysteries.",
+      "targetAudience": ["adventure lovers", "young adults", "gamers"],
+      "estimatedDuration": "long",
+      "themes": ["exploration", "mystery", "problem-solving", "friendship"],
+      "milestones": [
+        {
+          "id": "first-mystery",
+          "name": "First Mystery Solved",
+          "description": "Character solves their first significant mystery",
+          "requiredStats": { "intelligence": 25, "courage": 20 },
+          "requiredRelationshipLevel": 15,
+          "rewards": {
+            "relationshipBonus": 8,
+            "statBonuses": { "intelligence": 3, "courage": 3 }
+          }
+        },
+        {
+          "id": "expedition-leader",
+          "name": "Expedition Leader",
+          "description": "Character leads their first major expedition",
+          "requiredStats": { "charisma": 35, "courage": 30 },
+          "requiredRelationshipLevel": 35,
+          "rewards": {
+            "relationshipBonus": 12,
+            "statBonuses": { "charisma": 6, "courage": 4 },
+            "unlockedActivities": ["plan-expeditions", "train-explorers"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "community-helper",
+      "name": "Community Service Journey",
+      "genre": "Social Impact",
+      "description": "Guide a character as they learn the value of helping others and making a positive impact in their community.",
+      "targetAudience": ["educators", "community leaders", "young adults"],
+      "estimatedDuration": "medium",
+      "themes": ["service", "empathy", "community building", "social responsibility"],
+      "milestones": [
+        {
+          "id": "first-volunteer",
+          "name": "First Volunteer Experience",
+          "description": "Character completes their first volunteer project",
+          "requiredStats": { "empathy": 20, "energy": 15 },
+          "requiredRelationshipLevel": 10,
+          "rewards": {
+            "relationshipBonus": 6,
+            "statBonuses": { "empathy": 4, "charisma": 2 }
+          }
+        },
+        {
+          "id": "project-organizer",
+          "name": "Community Project Organizer",
+          "description": "Character organizes and leads their own community service project",
+          "requiredStats": { "charisma": 30, "empathy": 35 },
+          "requiredRelationshipLevel": 25,
+          "rewards": {
+            "relationshipBonus": 10,
+            "statBonuses": { "charisma": 5, "empathy": 5 },
+            "unlockedActivities": ["organize-fundraisers", "lead-volunteer-groups"]
+          }
+        }
+      ]
+    }
+  ],
+  "conflictScenarios": [
+    {
+      "id": "study-burnout",
+      "name": "Academic Burnout",
+      "description": "Character is feeling overwhelmed by their studies and losing motivation.",
+      "type": "academic",
+      "resolutionOptions": [
+        {
+          "name": "Encourage Rest and Balance",
+          "description": "Suggest taking a break and finding better work-life balance",
+          "requiredStats": { "empathy": 20 },
+          "outcomes": {
+            "relationshipChange": 5,
+            "statChanges": { "energy": 10, "patience": 5 },
+            "storyImpact": "Character learns healthy study habits and feels more balanced"
+          }
+        },
+        {
+          "name": "Help Create Study Plan",
+          "description": "Work together to create a more manageable study schedule",
+          "requiredStats": { "intelligence": 25, "empathy": 15 },
+          "outcomes": {
+            "relationshipChange": 8,
+            "statChanges": { "focus": 8, "intelligence": 3 },
+            "storyImpact": "Character develops better organizational skills and feels more confident"
+          }
+        }
+      ]
+    },
+    {
+      "id": "creative-block",
+      "name": "Creative Block",
+      "description": "Character is struggling with a creative block and feels uninspired.",
+      "type": "creative",
+      "resolutionOptions": [
+        {
+          "name": "Explore New Inspirations",
+          "description": "Encourage character to try new experiences for inspiration",
+          "requiredStats": { "creativity": 20 },
+          "outcomes": {
+            "relationshipChange": 6,
+            "statChanges": { "creativity": 8, "energy": 5 },
+            "storyImpact": "Character discovers new sources of inspiration and renewed enthusiasm"
+          }
+        },
+        {
+          "name": "Practice Different Techniques",
+          "description": "Suggest trying new artistic techniques or mediums",
+          "requiredStats": { "patience": 25, "creativity": 15 },
+          "outcomes": {
+            "relationshipChange": 7,
+            "statChanges": { "creativity": 10, "patience": 3 },
+            "storyImpact": "Character expands their artistic skills and breaks through their block"
+          }
+        }
+      ]
+    },
+    {
+      "id": "friendship-conflict",
+      "name": "Friendship Disagreement",
+      "description": "Character has had a disagreement with a close friend and isn't sure how to resolve it.",
+      "type": "friendship-challenge",
+      "resolutionOptions": [
+        {
+          "name": "Encourage Direct Communication",
+          "description": "Suggest talking openly and honestly with their friend",
+          "requiredStats": { "courage": 20, "empathy": 15 },
+          "outcomes": {
+            "relationshipChange": 8,
+            "statChanges": { "charisma": 5, "empathy": 5 },
+            "storyImpact": "Character learns valuable communication skills and strengthens their friendship"
+          }
+        },
+        {
+          "name": "Help Find Common Ground",
+          "description": "Work together to identify shared interests and values",
+          "requiredStats": { "empathy": 25, "intelligence": 20 },
+          "outcomes": {
+            "relationshipChange": 10,
+            "statChanges": { "empathy": 6, "charisma": 4 },
+            "storyImpact": "Character develops better conflict resolution skills and deeper friendships"
+          }
+        }
+      ]
+    },
+    {
+      "id": "low-confidence",
+      "name": "Self-Doubt Challenge",
+      "description": "Character is struggling with self-confidence and doubting their abilities.",
+      "type": "personal-growth",
+      "resolutionOptions": [
+        {
+          "name": "Celebrate Small Victories",
+          "description": "Help character recognize and celebrate their achievements",
+          "requiredStats": { "empathy": 20 },
+          "outcomes": {
+            "relationshipChange": 7,
+            "statChanges": { "courage": 8, "charisma": 3 },
+            "storyImpact": "Character builds self-confidence through positive reinforcement"
+          }
+        },
+        {
+          "name": "Set Achievable Goals",
+          "description": "Work together to set realistic, achievable goals",
+          "requiredStats": { "intelligence": 22, "patience": 18 },
+          "outcomes": {
+            "relationshipChange": 9,
+            "statChanges": { "courage": 10, "focus": 5 },
+            "storyImpact": "Character develops better goal-setting skills and self-confidence"
+          }
+        }
+      ]
+    }
+  ]
+}

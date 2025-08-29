@@ -130,8 +130,8 @@ export class ErrorHandlerService implements ErrorHandler {
    * Validate and sanitize error data before logging
    */
   private createLoggedError(errorId: string, error: any, context: ErrorContext): LoggedError {
-    const sanitizedMessage = this.sanitizeErrorMessage(error?.message || 'Unknown error');
-    const sanitizedStack = this.sanitizeStackTrace(error?.stack);
+    const sanitizedMessage = this.sanitizeErrorMessage((error && error.message) || 'Unknown error');
+    const sanitizedStack = this.sanitizeStackTrace(error && error.stack);
     const sanitizedContext = this.sanitizeContext(context);
 
     return {

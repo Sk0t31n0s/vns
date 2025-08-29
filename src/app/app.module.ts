@@ -3,11 +3,16 @@ import { NgModule, ErrorHandler } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { StoreModule, Action } from "@ngrx/store";
+import { EffectsModule } from "@ngrx/effects";
+import { StoreDevtoolsModule } from "@ngrx/store-devtools";
+import { metaReducers } from "./store/persistence.config";
 
 import { environment } from "../environments/environment";
 import { AppComponent } from "./app.component";
 import { INDEXED_DATABASE_FACTORY_TOKEN } from "./app.config";
 import { ErrorHandlerService } from "./services/error-handler.service";
+import { CharacterEffects } from "./store/characters/characters.effects";
+import { GameEffects } from "./store/game/game.effects";
 import { HomeComponent } from "components/home/home.component";
 import { LoadComponent } from "components/load/load.component";
 import { LoadConfirmationComponent } from "components/load/load-confirmation.component";
@@ -46,6 +51,20 @@ import * as fromRoute from "store/route/route.reducers";
       route: fromRoute.reducer,
       game:  fromGame.reducer,
       trainees: fromtrainees.reducer
+    }, {
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true,
+        strictStateSerializability: true,
+        strictActionSerializability: true
+      }
+    }),
+    EffectsModule.forRoot([CharacterEffects, GameEffects]),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode in production
+      name: 'Visual Novel Studio DevTools'
     }),
     CommonModule,
     ExtensionsModule,

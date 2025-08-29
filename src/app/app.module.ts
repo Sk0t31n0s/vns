@@ -1,5 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { NgModule, ErrorHandler } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { StoreModule, Action } from "@ngrx/store";
@@ -7,6 +7,7 @@ import { StoreModule, Action } from "@ngrx/store";
 import { environment } from "../environments/environment";
 import { AppComponent } from "./app.component";
 import { INDEXED_DATABASE_FACTORY_TOKEN } from "./app.config";
+import { ErrorHandlerService } from "./services/error-handler.service";
 import { HomeComponent } from "components/home/home.component";
 import { LoadComponent } from "components/load/load.component";
 import { LoadConfirmationComponent } from "components/load/load-confirmation.component";
@@ -52,7 +53,8 @@ import * as fromRoute from "store/route/route.reducers";
     NewModule
   ],
   providers: [
-    { provide: INDEXED_DATABASE_FACTORY_TOKEN, useValue: window.indexedDB }
+    { provide: INDEXED_DATABASE_FACTORY_TOKEN, useValue: window.indexedDB },
+    { provide: ErrorHandler, useClass: ErrorHandlerService }
   ],
   bootstrap: [AppComponent]
 })
